@@ -3,9 +3,11 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired
 from wtforms import validators
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 app.secret_key = "jj3sf#n5sf26gk@$gkgk45"
+Bootstrap(app)
 
 
 class LoginForm(FlaskForm):
